@@ -20,7 +20,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 *.lcov
 
 # nyc test coverage
@@ -30,7 +30,7 @@ coverage
 .grunt
 
 # Bower dependency directory (https://bower.io/)
-bower_components
+bower_components/
 
 # node-waf configuration
 .lock-wscript
@@ -41,6 +41,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+web_modules/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -94,7 +95,6 @@ dist
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
 # vuepress build output
@@ -128,3 +128,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Docker-related files
+# Dockerfile
+# docker-compose.yml
+# docker-compose.override.yml
+# docker-compose*.yml
+
+# PostgreSQL data
+pgdata/
+
+# Miscellaneous
+*.log
+logs/
